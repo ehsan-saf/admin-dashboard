@@ -76,3 +76,34 @@
 
 
 /* ------------------------------------- */
+
+/*  Lower  header */
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: start;
+}
+
+.account-info .account-image {
+    grid-row: span 2;
+    align-self: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+.headerButton {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 25px;
+}
