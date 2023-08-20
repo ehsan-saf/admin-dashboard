@@ -3,10 +3,10 @@
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: "sidebar header"
-                         "sidebar content";
+        "sidebar content";
 }
 
-.page > div {
+.page>div {
     border: 3px solid red;
     padding: 10px;
 }
@@ -22,3 +22,57 @@
 .main-content {
     grid-area: content;
 }
+
+
+/*      Header      */
+
+
+/* Upper header  */
+
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 20px 0 10px;
+    gap: 20px;
+}
+
+.search {
+    /* display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr; */
+    display: flex;
+    gap: 3px;
+}
+
+.searchButton {
+    /* grid-column: 1; */
+    padding: 10px 20px;
+}
+
+.searchBox {
+    /* grid-column: 2; */
+    border: none;
+    border-radius: 15px;
+    padding: 1px 7px;
+    background-color: rgb(231, 231, 231);
+}
+
+.searchBox:focus {
+    outline: 2px solid gainsboro;
+    background-color: white;
+}
+
+.notification-name {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+}
+
+.notification-logo {
+    border-radius: 50%;
+    padding: 20px 2px;
+}
+
+
+/* ------------------------------------- */
