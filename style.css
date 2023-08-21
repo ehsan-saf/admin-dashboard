@@ -8,7 +8,6 @@
 
 .page>div {
     border: 3px solid red;
-    padding: 10px;
 }
 
 .header {
@@ -26,6 +25,11 @@
 
 /*      Header      */
 
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 20px 10px 15px;
+}
 
 /* Upper header  */
 
@@ -67,6 +71,7 @@
     justify-self: end;
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 
 .notification-logo {
@@ -100,10 +105,12 @@
     display: flex;
     gap: 20px;
     align-self: center;
+    justify-self: end;
 }
 
 .headerButton {
     border-radius: 20px;
     border: none;
-    padding: 10px 25px;
+    width: 100px;
+    height: 40px;
 }
