@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .page {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -29,6 +34,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px 20px 10px 15px;
+    gap: 40px;
 }
 
 /* Upper header  */
@@ -134,4 +140,50 @@
     gap: 10px;
 }
 
-.dashboard {}
+.sidebar-grid .navigation,
+.sidebar-grid .settings {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+/* ---------------------------------------- */
+
+/*  Main Content  */
+
+.main-content {
+    padding: 25px 5px 20px 10px;
+}
+
+/*    Projects    */
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.projects-grid>h2 {
+    grid-column: span 2;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    border: 5px solid greenyellow;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    justify-self: end;
+}
