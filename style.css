@@ -187,3 +187,27 @@
     gap: 10px;
     justify-self: end;
 }
+
+/*  ---------------------------- */
+
+/*    Announcements   */
+
+.announcements-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-container {
+    display: grid;
+    gap: 10px;
+    border: 5px solid pink;
+    padding: 20px;
+}
+
+.announcement {
+    padding-bottom: 12px;
+}
+
+.announcements-container .announcement:not(:last-child) {
+    border-bottom: 1.2px solid gainsboro;
+}
