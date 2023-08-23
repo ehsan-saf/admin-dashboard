@@ -211,3 +211,28 @@
 .announcements-container .announcement:not(:last-child) {
     border-bottom: 1.2px solid gainsboro;
 }
+
+/* ------------------------------------ */
+
+/*  Trending  */
+
+.trending-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container {
+    display: grid;
+    border: 5px solid blue;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trending-item>img {
+    grid-row: span 2;
+    justify-self: center;
+    align-self: center;
+}
