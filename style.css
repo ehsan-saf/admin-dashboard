@@ -65,6 +65,11 @@
     background: none;
     background-image: url(./icons/magnify.svg);
     cursor: pointer;
+    transition: scale 0.2s;
+}
+
+.searchButton:hover {
+    scale: 1.4;
 }
 
 .searchBox {
