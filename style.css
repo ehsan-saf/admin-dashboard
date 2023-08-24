@@ -34,7 +34,7 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px 20px 10px 15px;
+    padding: 10px 35px 15px 35px;
     gap: 40px;
 }
 
@@ -119,14 +119,17 @@
 
 .account-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-self: start;
+    align-items: center;
 }
 
 .account-info .account-image {
     grid-row: span 2;
     align-self: center;
+    height: 70px;
+    width: 70px;
 }
 
 .header-buttons {
