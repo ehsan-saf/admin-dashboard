@@ -65,7 +65,7 @@
     background: none;
     background-image: url(./icons/magnify.svg);
     cursor: pointer;
-    transition: scale 0.2s;
+    transition: scale 0.2gits;
 }
 
 .searchButton:hover {
@@ -93,7 +93,7 @@
     align-items: center;
 }
 
-.notification-logo {
+.notificationButton {
     width: 25px;
     height: 25px;
     border: none;
@@ -101,6 +101,41 @@
     background-image: url(./icons/notification.svg);
     cursor: pointer;
 }
+
+.notificationButton:hover {
+    animation-duration: 0.3s;
+    animation-name: ring;
+    scale: 1.5;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    25% {
+        transform: rotate(5deg);
+        scale: 1.1;
+    }
+
+    50% {
+        transform: rotate(0eg);
+        scale: 1.2;
+    }
+
+    75% {
+        transform: rotate(-5deg);
+        scale: 1.3;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        scale: 1.5;
+    }
+}
+
+.notificationButton:hover {}
 
 .account-image {
     width: 50px;
