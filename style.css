@@ -59,8 +59,8 @@
 
 .searchButton {
     /* grid-column: 1; */
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: none;
     background: none;
     background-image: url(./icons/magnify.svg);
@@ -84,13 +84,27 @@
 .notification-name {
     justify-self: end;
     display: flex;
-    gap: 5px;
+    gap: 25px;
     align-items: center;
 }
 
 .notification-logo {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    background-image: url(./icons/notification.svg);
+    cursor: pointer;
+}
+
+.account-image {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    padding: 20px 2px;
+}
+
+.user-name {
+    font-weight: bold;
 }
 
 
