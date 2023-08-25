@@ -241,6 +241,15 @@
     height: 30px;
 }
 
+.sidebar-grid div div {
+    transition: scale 0.2s;
+    cursor: pointer;
+}
+
+.sidebar-grid div div:hover {
+    scale: 1.1;
+}
+
 /* ---------------------------------------- */
 
 /*  Main Content  */
