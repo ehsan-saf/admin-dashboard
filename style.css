@@ -5,7 +5,7 @@
 
 .page {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: "sidebar header"
         "sidebar content";
@@ -208,20 +208,36 @@
     grid-template-columns: 1fr;
     gap: 60px;
     padding: 20px;
+    background-color: #fe4a49ff;
+    color: white;
 }
 
 .dashboard,
 .navigation-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
 }
 
 .sidebar-grid .navigation,
 .sidebar-grid .settings {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 15px;
+}
+
+.sidebar-grid img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+}
+
+.dashboard-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.sidebar-grid img:not(.dashboard-logo) {
+    width: 30px;
+    height: 30px;
 }
 
 /* ---------------------------------------- */
