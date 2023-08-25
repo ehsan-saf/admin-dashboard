@@ -5,11 +5,10 @@
 
 .page {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: "sidebar header"
         "sidebar content";
-    height: 99vh;
 }
 
 .page>div {
@@ -206,17 +205,19 @@
 .sidebar-grid {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 100px 270px;
     gap: 60px;
     padding: 20px;
     background-color: #fe4a49ff;
     color: white;
+    height: 100%;
 }
 
 .dashboard,
 .navigation-item {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .sidebar-grid .navigation,
