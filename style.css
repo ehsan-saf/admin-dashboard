@@ -7,7 +7,6 @@
 .page {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 4fr;
     grid-template-areas: "sidebar header"
         "sidebar content";
 }
@@ -342,20 +341,25 @@ button.share {
 
 .announcements-container {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     border-radius: 10px;
     padding: 20px;
-    flex: 1;
+    max-height: 700px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .announcement {
-    padding-bottom: 12px;
+    padding-bottom: 20px;
+    max-width: 250px;
 }
 
 .announcements-container .announcement:not(:last-child) {
     border-bottom: 1.2px solid gainsboro;
+}
+
+.announcement h2 {
+    font-size: 1rem;
 }
 
 /* ------------------------------------ */
