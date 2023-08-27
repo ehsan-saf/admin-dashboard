@@ -76,18 +76,19 @@
     /* grid-column: 2; */
     border: none;
     border-radius: 15px;
-    padding: 7px;
+    padding: 7px 15px;
     font-size: 1rem;
     background-color: rgb(231, 231, 231);
     flex: 0;
-    transition: flex 0.4s ease;
+    transition: flex 0.3s ease, box-shadow 0.4s;
 }
 
 
 .searchBox:focus {
-    outline: 2px solid gainsboro;
+    outline: 1.5px solid gainsboro;
     background-color: white;
     flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .notification-name {
