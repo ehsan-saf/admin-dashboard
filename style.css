@@ -12,10 +12,6 @@
         "sidebar content";
 }
 
-.page>div {
-    border: 3px solid red;
-}
-
 .header {
     grid-area: header;
 }
@@ -38,15 +34,6 @@
     gap: 40px;
 }
 
-/* Upper header  */
-
-
-.upper-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px 20px 0 10px;
-    gap: 20px;
-}
 
 .search {
     /* display: grid;
@@ -156,11 +143,6 @@
 /* ------------------------------------- */
 
 /*  Lower  header */
-
-.lower-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .account-info {
     display: grid;
